@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'localeify',
+  globalScript: 'src/utils/global-script.ts',
   outputTargets: [
     {
       type: 'dist',

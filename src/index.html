@@ -11,7 +11,24 @@
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <p><t-text>A string that will be translated</t-text></p>
+  <p><t-text>A string that will be translated and accept a param named "param1" with value "<t-param name="param1">the value</t-param>"</t-text></p>
+  <p>
+    <t-text>
+      A multi-line
+      string that will be
+      translated
+    </t-text>
+  </p>
+  <p>
+    <pre>
+      <t-text pre deident>
+        A multi-line pre-formatted
+        string that will be
+        translated
+      </t-text>
+    </pre>
+  </p>
 
 </body>
 </html>
