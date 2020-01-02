@@ -1,0 +1,35 @@
+{
+  "name": "localeify",
+  "version": "0.0.1",
+  "description": "Ergonomic localization support for your front-end applications.",
+  "main": "dist/node/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:node",
+    "build:esm": "babel -d dist/esm --delete-dir-on-start src",
+    "build:node": "babel -d dist/node --delete-dir-on-start --config-file ./.babelrc-node src",
+    "prepublish": "npm run test && npm run build",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidrios/localeify.git"
+  },
+  "author": "David Rios <david.rios.gomes@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/davidrios/localeify/issues"
+  },
+  "homepage": "https://github.com/davidrios/localeify#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "globals": [
+      "HTMLElement"
+    ]
+  }
+}

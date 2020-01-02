@@ -1,0 +1,6 @@
+{
+  "name": "localeify/webcomponents",
+  "private": true,
+  "main": "../dist/node/webcomponents/index.js",
+  "module": "../dist/esm/webcomponents/index.js"
+}
